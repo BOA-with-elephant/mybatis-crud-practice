@@ -1,14 +1,14 @@
 package com.ohgiraffers.publisher.model.dto;
 
-public class AuthorDTO {
+public class AuthorDTOJA {
     private int authorId;
     private String authorName;
     private Boolean awarded;
     private int empId;
 
-    public AuthorDTO() {}
+    public AuthorDTOJA() {}
 
-    public AuthorDTO(int authorId, String authorName, Boolean awarded, int empId) {
+    public AuthorDTOJA(int authorId, String authorName, Boolean awarded, int empId) {
         this.authorId = authorId;
         this.authorName = authorName;
         this.awarded = awarded;
