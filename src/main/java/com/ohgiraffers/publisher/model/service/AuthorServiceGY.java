@@ -50,7 +50,10 @@ public class AuthorServiceGY {
     public void deleteAuthor(int authorId) {
         try (SqlSession sqlSession = TemplateGY.getSqlSession()) {
             publisherMapperGY mapper = sqlSession.getMapper(publisherMapperGY.class);
-            int result = mapper.deleteAuthor(authorId); // 책은 자동 삭제됨
+
+            int bookDeleteResult = mapper.deleteBooksByAuthorId(authorId);
+
+            int result = mapper.deleteAuthor(authorId);
             if (result > 0) {
                 sqlSession.commit();
                 System.out.println("작가 삭제 성공");

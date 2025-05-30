@@ -70,7 +70,7 @@ public class ApplicationGY {
 
         System.out.print("수상 여부 (Y/N) : ");
         String awardedInput = sc.nextLine().toUpperCase();
-        params.put("awarded", awardedInput.equals("Y") ? "1" : "0"); // 반드시 1/0
+        params.put("awarded", awardedInput.equals("Y") ? "1" : "0");
 
         System.out.print("담당 직원 사번 : ");
         String empId = sc.nextLine();
@@ -93,7 +93,7 @@ public class ApplicationGY {
 
         System.out.print("수상 여부 (Y/N) : ");
         String awardedInput = sc.nextLine().toUpperCase();
-        params.put("awarded", awardedInput.equals("Y") ? "1" : "0"); // 반드시 1/0
+        params.put("awarded", awardedInput.equals("Y") ? "1" : "0");
 
         System.out.print("새 담당 직원 사번 : ");
         String empId = sc.nextLine();

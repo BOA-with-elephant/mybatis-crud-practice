@@ -9,5 +9,6 @@ public interface publisherMapperGY {
     AuthorAndEmployeeDTO selectAuthorById(int authorId);
     int insertAuthor(Map<String, String> params);
     int updateAuthor(Map<String, String> params);
+    int deleteBooksByAuthorId(int authorId);
     int deleteAuthor(int authorId);
 }

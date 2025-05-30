@@ -50,6 +50,10 @@
         WHERE author_id = #{authorId}
     </update>
 
+    <delete id="deleteBooksByAuthorId" parameterType="int">
+        DELETE FROM book WHERE author_code = #{authorId}
+    </delete>
+
     <delete id="deleteAuthor" parameterType="int">
         DELETE FROM author WHERE author_id = #{authorId}
     </delete>
