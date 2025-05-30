@@ -10,7 +10,7 @@ public class AuthorAndEmployeeDTO {
     public AuthorAndEmployeeDTO(){}
 
     public AuthorAndEmployeeDTO(int authorId, String authorName, Boolean awarded, String empName) {
-      
+
         this.authorId = authorId;
         this.authorName = authorName;
         this.awarded = awarded;

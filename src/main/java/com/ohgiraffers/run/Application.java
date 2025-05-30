@@ -1,9 +1,6 @@
 package com.ohgiraffers.run;
 
-
-import com.ohgiraffers.publisher.controller.AuthorControllerYI;
 import com.ohgiraffers.publisher.controller.AuthorControllerJH;
-
 
 import java.util.HashMap;
 import java.util.Map;
