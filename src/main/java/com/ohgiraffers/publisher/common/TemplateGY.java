@@ -1,6 +1,6 @@
 package com.ohgiraffers.publisher.common;
 
-import com.ohgiraffers.publisher.model.dao.publisherMapper;
+import com.ohgiraffers.publisher.model.dao.publisherMapperGY;
 
 import org.apache.ibatis.datasource.pooled.PooledDataSource;
 import org.apache.ibatis.mapping.Environment;
@@ -10,7 +10,7 @@ import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import org.apache.ibatis.transaction.jdbc.JdbcTransactionFactory;
 
-public class Template {
+public class TemplateGY {
 
     private static String DRIVER = "com.mysql.cj.jdbc.Driver";
     private static String URL = "jdbc:mysql://localhost/publisherdb2";
@@ -28,7 +28,7 @@ public class Template {
 
             Configuration configuration = new Configuration(environment);
 
-            configuration.addMapper(publisherMapper.class);
+            configuration.addMapper(publisherMapperGY.class);
 
             sqlSessionFactory = new SqlSessionFactoryBuilder().build(configuration);
         }
