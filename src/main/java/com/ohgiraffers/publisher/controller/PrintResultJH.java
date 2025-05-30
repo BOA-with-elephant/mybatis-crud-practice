@@ -55,8 +55,8 @@ public class PrintResultJH {
 
         switch(successCode){
             case "registNewAuthor" : successMessage = "새 작가 등록에 성공하였습니다."; break;
-            case "modifyAuthor" : successMessage = "직원 정보 수정에 성공하였습니다."; break;
-            case "deleteAuthor" : successMessage = "직원 정보 삭제에 성공하였습니다.";break;
+            case "modifyAuthor" : successMessage = "작가 정보 수정에 성공하였습니다."; break;
+            case "deleteAuthor" : successMessage = "작가 정보 삭제에 성공하였습니다.";break;
         }
 
         System.out.println();
@@ -72,9 +72,9 @@ public class PrintResultJH {
             case "selectAllAuthor" : errorMessage = "전체 작가 정보 불러오기에 실패하였습니다."; break;
             case "selectOneAuthor" : errorMessage = "해당 작가의 정보 불러오기에 실패하였습니다."; break;
             case "registNewAuthor" : errorMessage = "새 작가 등록하기에 실패하였습니다."; break;
-            case "selectAllEmployee" : errorMessage = "직원 정보 불러오기에 실패하였습니다."; break;
-            case "modifyAuthor" : errorMessage = "직원 정보 수정에 실패하였습니다."; break;
-            case "deleteAuthor" : errorMessage = "직원 정보 삭제에 실패하였습니다."; break;
+            case "selectAllEmployee" : errorMessage = "작가 정보 불러오기에 실패하였습니다."; break;
+            case "modifyAuthor" : errorMessage = "작가 정보 수정에 실패하였습니다."; break;
+            case "deleteAuthor" : errorMessage = "작가 정보 삭제에 실패하였습니다."; break;
         }
 
         System.out.println();
