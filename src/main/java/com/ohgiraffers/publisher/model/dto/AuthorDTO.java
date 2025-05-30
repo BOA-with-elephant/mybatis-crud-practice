@@ -1,30 +1,17 @@
 package com.ohgiraffers.publisher.model.dto;
 
-public class AuthorAndEmployeeDTO {
-
+public class AuthorDTO {
     private int authorId;
     private String authorName;
     private Boolean awarded;
-    private String empName;
     private int empId;
 
-    public AuthorAndEmployeeDTO(){}
+    public AuthorDTO() {}
 
-    public AuthorAndEmployeeDTO(int authorId, String authorName, Boolean awarded, String empName, int empId) {
-
+    public AuthorDTO(int authorId, String authorName, Boolean awarded, int empId) {
         this.authorId = authorId;
         this.authorName = authorName;
         this.awarded = awarded;
-        this.empName = empName;
-        this.empId = empId;
-
-    }
-
-    public int getEmpId() {
-        return empId;
-    }
-
-    public void setEmpId(int empId) {
         this.empId = empId;
     }
 
@@ -52,21 +39,21 @@ public class AuthorAndEmployeeDTO {
         this.awarded = awarded;
     }
 
-    public String getEmpName() {
-        return empName;
+    public int getEmpId() {
+        return empId;
     }
 
-    public void setEmpName(String empName) {
-        this.empName = empName;
+    public void setEmpId(int empId) {
+        this.empId = empId;
     }
 
     @Override
     public String toString() {
-        return "AuthorAndEmployeeDTO{" +
+        return "PublisherDTO{" +
                 "authorId=" + authorId +
                 ", authorName='" + authorName + '\'' +
                 ", awarded=" + awarded +
-                ", empName='" + empName + '\'' +
+                ", empId=" + empId +
                 '}';
     }
 }

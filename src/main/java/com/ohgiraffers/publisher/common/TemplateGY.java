@@ -2,7 +2,6 @@ package com.ohgiraffers.publisher.common;
 
 
 import com.ohgiraffers.publisher.model.dao.AuthorMapperJA;
-
 import org.apache.ibatis.datasource.pooled.PooledDataSource;
 import org.apache.ibatis.mapping.Environment;
 import org.apache.ibatis.session.Configuration;
@@ -12,7 +11,7 @@ import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import org.apache.ibatis.transaction.jdbc.JdbcTransactionFactory;
 
 
-public class TemplateJA {
+public class TemplateGY {
 
     private static String DRIVER = "com.mysql.cj.jdbc.Driver";
     private static String URL = "jdbc:mysql://localhost/publisherdb2";

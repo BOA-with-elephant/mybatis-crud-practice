@@ -105,6 +105,7 @@ public class AuthorControllerYI {
 
         int empId = Integer.parseInt(parameter.get("empId"));
 
+
         AuthorAndEmployeeDTO author = new AuthorAndEmployeeDTO();
         author.setAuthorId(authorId);
         author.setAwarded(awarded);
