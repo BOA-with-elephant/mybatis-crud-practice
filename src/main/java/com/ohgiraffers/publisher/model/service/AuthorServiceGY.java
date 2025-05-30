@@ -1,7 +1,7 @@
 package com.ohgiraffers.publisher.model.service;
 
-import com.ohgiraffers.publisher.model.dao.publisherMapperGY;
 import com.ohgiraffers.publisher.common.TemplateGY;
+import com.ohgiraffers.publisher.model.dao.publisherMapperGY;
 import org.apache.ibatis.session.SqlSession;
 import java.util.Map;
 

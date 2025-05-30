@@ -37,7 +37,7 @@ CREATE TABLE IF NOT EXISTS author
     author_id    integer(5) AUTO_INCREMENT COMMENT '작가코드',
     author_name    VARCHAR(10) NOT NULL COMMENT '작가이름',
     awarded    boolean COMMENT '수상내역',
-    emp_id  INTEGER(5) COMMENT '담당직원번호',
+    emp_id    INTEGER(5) COMMENT '담당직원번호',
     CONSTRAINT pk_author_id PRIMARY KEY (author_id),
     CONSTRAINT fk_emp_code FOREIGN KEY(emp_id) REFERENCES employee (EMP_ID)
 ) ENGINE=INNODB COMMENT '작가리스트';
@@ -51,7 +51,7 @@ CREATE TABLE IF NOT EXISTS book
     book_price    INTEGER(10) NOT NULL COMMENT '가격',
     ISBN    INTEGER(15) UNIQUE NOT NULL COMMENT 'ISBN',
     CONSTRAINT pk_book_code PRIMARY KEY (book_code),
-    CONSTRAINT FOREIGN KEY (author_code) REFERENCES author (author_id)
+    CONSTRAINT FOREIGN KEY (author_code) REFERENCES author (author_id) ON DELETE CASCADE
 ) ENGINE=INNODB COMMENT '상품리스트';
 
  
